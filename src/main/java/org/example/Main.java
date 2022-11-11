@@ -2,10 +2,16 @@ package org.example;
  
 public class Main {  
   public static void main(String[] args) {
-        System.out.println("Hello world!\nHello universe\nhello multiverse\n\n\n\n\nhello multiline\n");
-        (new Throwable("oeps")).printStackTrace();
-        System.out.println("bye");
-        doeiets();
+        System.out.println("Hello world");
+         
+         System.out.println("Entering recursion...");
+         doeiets();
+   
+   final ServerSocket server = new ServerSocket(8080);
+         System.out.println("Listening for connection on port 8080 ....");
+         while (true){
+           // spin forever
+         }
     }
 
     private static void doeiets() {
