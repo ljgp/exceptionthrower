@@ -1,26 +1,15 @@
 package org.example;
-
-import java.net.InetSocketAddress; 
-import java.nio.file.Path; 
- 
-import com.sun.net.httpserver.SimpleFileServer; 
-import com.sun.net.httpserver.SimpleFileServer.OutputLevel; 
  
 public class Main {  
-  public static void main(String[] args) { 
-    // parameters 
-    Integer port = 8080; 
-    String pathToServe = "/"; 
-    OutputLevel outputLevel = OutputLevel.VERBOSE; 
- 
-    // create the server 
-    var server = SimpleFileServer.createFileServer( 
-      new InetSocketAddress(port), 
-      Path.of(pathToServe), 
-      outputLevel); 
- 
-      // start the server 
-      server.start(); 
-  } 
+  public static void main(String[] args) {
+        System.out.println("Hello world!\nHello universe\nhello multiverse\n\n\n\n\nhello multiline\n");
+        (new Throwable("oeps")).printStackTrace();
+        System.out.println("bye");
+        doeiets();
+    }
+
+    private static void doeiets() {
+        doeiets();
+    }
 } 
 
