@@ -8,7 +8,12 @@ public class Main {
         System.out.println("Hello world");
 
         System.out.println("Entering recursion...");
-        doeiets();
+        try {
+            doeiets();
+        } catch ( StackOverflowError e) {
+            System.out.println( "dat was te veel");
+            e.printStackTrace();
+        }
 
         final ServerSocket server = new ServerSocket(8080);
         System.out.println("Listening for connection on port 8080 ....");
@@ -20,4 +25,4 @@ public class Main {
     private static void doeiets() {
         doeiets();
     }
-} 
+}
